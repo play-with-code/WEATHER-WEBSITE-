@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+   padding: 0;
+   font-family:sans-serif ;
+   box-sizing: border-box;
+}
+body{
+    background-color: #081b29;
+    
+}
+.card{
+  width: 90%;
+  max-width:470px;
+  background-image: url(images/weather_background.webp);
+ background-size: cover;
+  color: #fff;
+  margin:100px auto;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+
+}
+.serach{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input {
+    border: 1px solid #ccc;
+    outline: none;
+    background: #f8f8f8;
+    color: #333;
+    padding: 17px 20px;
+    height: 50px;
+    border-radius:35px;
+    font-size: 14px;
+    width: 75%; /* Adjust the width as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.search button {
+    background-color:#fff;
+    color: #333; /* White text color */
+    margin-left: 10px;
+    padding: 15px 20px ;
+    padding-bottom: 8px;
+    border: none;
+    border-radius:50%;
+    cursor: pointer;
+    font-size: 14px;
+    vertical-align: middle; /* Align vertically with the input */
+    margin-left: 10px; 
+}
+
+/* Style on hover for the button */
+.search button:hover {
+    background-color: #45a049;
+}
+
+.search button img{
+    width: 20px;
+    
+}
+ .weather-icon{
+    
+    margin-top: 30px;
+}
+ 
+
+.weather h1{
+    font-size:80px;
+    font-weight:500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top:-10px;
+}
+
+.weather{
+    display: none;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+
+} 
+.humidity, .wind{
+    font-size: 28px;
+    margin-top:-6px;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size:14px;
+    margin-top:10px;
+    display: none;
+}
